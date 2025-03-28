@@ -1,6 +1,32 @@
-[gd_scene load_steps=2 format=3 uid="uid://cql4prces3hxu"]
+[gd_scene load_steps=4 format=3 uid="uid://cql4prces3hxu"]
 
 [ext_resource type="Script" path="res://assets/scripts/game.gd" id="1_vb0b8"]
+[ext_resource type="PackedScene" uid="uid://dvq3i62ln1lkr" path="res://assets/scenes/player.tscn" id="2_j7q22"]
+[ext_resource type="PackedScene" uid="uid://dwspolpvmkt6w" path="res://assets/scenes/plataform.tscn" id="3_inwpx"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_vb0b8")
+
+[node name="Player" parent="." instance=ExtResource("2_j7q22")]
+position = Vector2(352, 88)
+
+[node name="plataform" parent="." instance=ExtResource("3_inwpx")]
+position = Vector2(0, 816)
+
+[node name="plataform5" parent="." instance=ExtResource("3_inwpx")]
+position = Vector2(64, 672)
+
+[node name="plataform6" parent="." instance=ExtResource("3_inwpx")]
+position = Vector2(456, 464)
+
+[node name="plataform7" parent="." instance=ExtResource("3_inwpx")]
+position = Vector2(-72, 176)
+
+[node name="plataform2" parent="." instance=ExtResource("3_inwpx")]
+position = Vector2(136, 816)
+
+[node name="plataform3" parent="." instance=ExtResource("3_inwpx")]
+position = Vector2(272, 816)
+
+[node name="plataform4" parent="." instance=ExtResource("3_inwpx")]
+position = Vector2(408, 816)
